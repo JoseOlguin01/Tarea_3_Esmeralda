@@ -15,7 +15,7 @@ typedef struct{
 
 Nodo* importarArchivo(char* file_name, int n);
 
-List* get_adj_nodes(Nodo* r, int n);
+void importarArchivo(List* listaNodos);
 
 void distanciaEntreEntregas(List* listaNodos);
 

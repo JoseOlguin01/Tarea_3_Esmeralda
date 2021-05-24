@@ -22,7 +22,7 @@ Nodo* importarArchivo(char* file_name, int n){
   return r;
 }
 
-List* get_adj_nodes(Nodo* r, int n){
+/*List* get_adj_nodes(Nodo* r, int n){
     
     List* list=createList();
     int i,j,k;
@@ -38,12 +38,13 @@ List* get_adj_nodes(Nodo* r, int n){
     }
     
     return list;
-}
+}*/
 
-void crearRuta(){
+/*void crearRuta(){
 
 }
 
 void generarRutaAleatoria(){
 
 }
+*/

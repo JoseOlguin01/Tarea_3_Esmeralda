@@ -26,6 +26,9 @@ void mostrarMenu (List* listaNodos) {
 		scanf("%d", &opcion);
 		
 		/*switch (opcion) {
+=======
+		switch (opcion) {
+>>>>>>> 43aed9232392d4d98079fe5f544bfb2149262644
 			case 1: distanciaEntreEntregas(listaNodos); break;
     	case 2: mostrar3Entregas(listaNodos); break;
 			case 3: crearRuta(listaNodos); break;
@@ -35,6 +38,8 @@ void mostrarMenu (List* listaNodos) {
 			case 7: mejorRuta(listaNodos); break;
       case 0 : salir = true; break;
 			default : printf("Opcion no valida, intente nuevamente.\n");
+<<<<<<< HEAD
 		}*/
+		
 	}
 }

@@ -14,6 +14,7 @@ int main() {
   scanf("%d",&n);
 	Nodo* initial=importarArchivo("tsp.txt",n);
   mostrarMenu(listaNodos);
+
 	return 0;
 
 }
