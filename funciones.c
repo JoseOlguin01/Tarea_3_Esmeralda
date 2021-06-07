@@ -86,7 +86,7 @@ void bubbleSort(Entrega* r, int n) {
   	}
 }
 
-/*void mostrar3Entregas (Entrega* r, int n) {
+void mostrar3Entregas (Entrega* r, int n) {
 	int coordenadax, coordenaday;
 	printf("Ingrese coordenada x :\n");
 	scanf("%d", &coordenadax);
@@ -112,7 +112,7 @@ void bubbleSort(Entrega* r, int n) {
     		printf ("%d    %.2f\n",r->aux[i], r->distancia[i]);
     	}
 	}
-}*/
+}
 
 /*void crearRuta(Entrega* r,int n){
 int x,y,i,id,id2,tru=0,cont=1;
