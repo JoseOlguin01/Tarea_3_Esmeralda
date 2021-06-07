@@ -5,7 +5,7 @@
 #include "funciones.h"
 #include "menu.h"
 
-void mostrarMenu (List* listaNodos, Nodo* r, int n) {
+void mostrarMenu (List* listaNodos, Entrega* r, int n) {
 	bool salir = false;
 	while (salir != true)
 	{
@@ -27,13 +27,13 @@ void mostrarMenu (List* listaNodos, Nodo* r, int n) {
 		
 		switch (opcion) {
 			case 1: distanciaEntreEntregas(r,n); break;
-    	/*case 2: mostrar3Entregas(listaNodos); break;
-			case 3: crearRuta(listaNodos); break;
-			case 4: generarRutaAleatoria(listaNodos); break;
-			case 5: mejorarRuta(listaNodos); break;
-			case 6: mostrarRutas(listaNodos); break;
-			case 7: mejorRuta(listaNodos); break;*/
-      case 0 : salir = true; break;
+    	case 2: mostrar3Entregas(r, n); break;
+			case 3: crearRuta(r,n); break;
+			case 4: generarRutaAleatoria(r,n); break;
+			/*case 5: mejorarRuta(r,n); break;
+			case 6: mostrarRutas(r,n); break;
+			case 7: mejorRuta(r,n); break;*/
+      		case 0 : salir = true; break;
 			default : printf("Opcion no valida, intente nuevamente.\n");
 		}
 	}

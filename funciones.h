@@ -8,28 +8,34 @@ typedef struct{
 
 typedef struct{
   int id[50];
+  int visited[50];
   int x[50];
   int y[50];
-}Nodo;
+  int aux[50];
+  float distancia[50];
+  float total[50];
+  char nombreRuta[50];
+}Entrega;
 
 
-Nodo* importarArchivo(char* file_name, int n);
+Entrega* importarArchivo (char* file_name, int n);
 
-void importarArchivo(List* listaNodos);
+List* get_adj_nodes(Entrega* r,float total, int n, int id,int id2);
 
-void distanciaEntreEntregas(List* listaNodos);
+float calculardistancia (int x1, int y1, int x2, int y2);
 
-void mostrar3Entregas(List* listaNodos);
+void distanciaEntreEntregas(Entrega* r,int n);
 
-void crearRuta(List* listaNodos);
+void mostrar3Entregas (Entrega* r, int n);
 
-void generarRutaAleatoria(List* listaNodos);
+void crearRuta (Entrega* r,int n);
 
-void mejorarRuta(List* listaNodos); 
+void generarRutaAleatoria (Entrega* r,int n);
 
-void mostrarRutas(List* listaNodos);
+void mejorarRuta (Entrega* r,int n); 
 
-void mejorRuta(List* listaNodos);
+void mostrarRutas (Entrega* r,int n);
 
+void mejorRuta (Entrega* r,int n);
 
 #endif
